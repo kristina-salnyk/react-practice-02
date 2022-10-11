@@ -7,7 +7,7 @@ import {
 } from 'react-icons/fa';
 import { formatEventDuration, formatEventStart } from 'utils';
 import { iconSize } from 'constants/index';
-import css from './Event.module.css';
+// import css from './Event.module.css';
 import { Card, Chip, Info, Title } from './Event.styled';
 
 export const Event = ({ name, location, speaker, type, start, end }) => {
