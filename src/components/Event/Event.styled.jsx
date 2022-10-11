@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Card = styled.div`
   position: relative;
-  border: 2px dashed black;
+  border: ${props => `2px dashed ${props.theme.colors.black}`};
   padding: 8px;
   border-radius: 4px;
 `;
@@ -21,7 +21,7 @@ export const Info = styled.p`
   align-items: center;
   margin-top: 0;
   margin-bottom: 8px;
-  color: var(--color-primary-text);
+  color: ${props => props.theme.colors.primaryText};
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -30,7 +30,7 @@ export const Info = styled.p`
   & svg {
     display: block;
     margin-right: 8px;
-    color: var(--color-secondary-text);
+    color: ${props => props.theme.colors.secondaryText};
   }
 
   &:hover svg {
@@ -49,14 +49,14 @@ export const Chip = styled.span`
   background-color: ${getBgrColor};
 `;
 
-function getBgrColor({ eventType }) {
+function getBgrColor({ eventType, theme }) {
   switch (eventType) {
     case 'free':
-      return 'var(--color-green)';
+      return theme.colors.green;
     case 'paid':
-      return 'var(--color-blue)';
+      return theme.colors.blue;
     case 'vip':
-      return 'var(--color-red)';
+      return theme.colors.red;
     default:
       return '#000';
   }
