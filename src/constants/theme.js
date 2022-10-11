@@ -7,6 +7,7 @@ export const theme = Object.freeze({
     blue: '#2196f3',
     primaryText: '#212121',
     secondaryText: '#757575',
+    primaryBg: 'lightYellow',
   },
-  spacing: value => `${4 * value}px`,
+  space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
 });
