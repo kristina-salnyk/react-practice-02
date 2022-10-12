@@ -1,6 +1,6 @@
 import { PageTitle } from 'components/PageTitle/PageTitle';
 import { EventBoard } from 'components/EventBoard/EventBoard';
-import { LoginForm } from 'components/LoginForm';
+import { LoginForm } from './LoginForm';
 import upcomingEvents from '../upcoming-events.json';
 import { Container } from './App.styled';
 import { Box } from './Box/Box';
