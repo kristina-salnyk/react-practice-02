@@ -1,2 +1,2 @@
-## React Practice
+# React Practice
 React Components
