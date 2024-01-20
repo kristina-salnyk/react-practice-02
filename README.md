@@ -1,2 +1,2 @@
 # React Practice
-React Components
+React Item Collection
